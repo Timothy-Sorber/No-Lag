@@ -1,0 +1,10 @@
+every 120 seconds:
+ make console execute command "/kill @e[type=item]"
+ broadcast "[<red>Nolag<white>]: <green>Cleared all ground items."
+ 
+command /Clearlag:
+ permission: op
+ permission: "&cYou don't have permission to do this!"
+ trigger:
+  make console execute command "/kill @e[type=item]"
+  broadcast "[<red>Nolag<white>]: <green>Cleared all ground items."
