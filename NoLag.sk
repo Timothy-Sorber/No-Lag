@@ -1,5 +1,8 @@
 every 120 seconds:
+ {nolag-toggle} is true
  make console execute command "/kill @e[type=item]"
+ make console execute command "/kill @e[type=minecart]"
+ make console execute command "/kill @e[type=armor_stand]"
  broadcast "[<red>Nolag<white>]: <green>Cleared all ground items."
  
 command /Clearlag:
@@ -8,3 +11,12 @@ command /Clearlag:
  trigger:
   make console execute command "/kill @e[type=item]"
   broadcast "[<red>Nolag<white>]: <green>Cleared all ground items."
+  
+command /nolag-toggle:
+ trigger:
+  if {nolag-toggle} is true:
+   set {nolag-toggle} to false
+   message "&cNoLag is now off!"
+  else:
+   set {nolag-toggle} to true
+   message "<green>NoLag is now on!"
