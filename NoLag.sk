@@ -24,3 +24,10 @@ command /nolag-toggle:
 
 on load:
  set {nolag-toggle} to true
+
+command /Nolag:
+ trigger:
+  message "<green>Thank you for using NoLag!"
+  message "<green>NoLag's automatic lag clear is toggleable using /nolag-toggle !"
+  message "<green>NoLag will automaticly clear lag every 120 seconds!"
+  message "<green>Use /clearlag to manually clear lag!"
