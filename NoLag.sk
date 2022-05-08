@@ -20,3 +20,6 @@ command /nolag-toggle:
   else:
    set {nolag-toggle} to true
    message "<green>NoLag is now on!"
+
+on load:
+ set {nolag-toggle} to true
