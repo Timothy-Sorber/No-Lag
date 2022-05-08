@@ -13,6 +13,7 @@ command /Clearlag:
   broadcast "[<red>Nolag<white>]: <green>Cleared all ground items."
   
 command /nolag-toggle:
+ player is op
  trigger:
   if {nolag-toggle} is true:
    set {nolag-toggle} to false
